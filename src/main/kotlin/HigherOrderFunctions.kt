@@ -1,3 +1,5 @@
+import br.com.alura.bytebank.modelo.Endereco
+
 fun main(args: Array<String>) {
 //    val endereco = Endereco(logradouro = "rua vergueiro", 3132)
 //    val enderecoEmMaiusculo = "${endereco.logradouro}, ${endereco.numero}".toUpperCase()
@@ -19,9 +21,6 @@ fun main(args: Array<String>) {
         .filter { enderecoFiltrado -> enderecoFiltrado.complemento.isNotEmpty() }
         .let(::println)
 }
-
-class Endereco(var logradouro: String? = null, var numero: Int? = null, var complemento: String = "")
-
 
 
 
